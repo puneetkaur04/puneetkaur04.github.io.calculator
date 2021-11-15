@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator App </title>
+    <link rel="stylesheet" href="calcStyle.css">
+    <script src="calcJS.js"></script>
+</head>
+<body>
+    <div class = "top">
+        <footer>
+            <p> Calculator </p>
+        </footer>
+    </div>
+
+    <div class="calculator">
+        
+    <div class= "formstyle">
+        <form name = "form1">
+            <input class= "textview" name = "textview">
+        </form>
+            <!-- the input -->
+            <!-- the buttons -->
+        <div class="calculator-buttons">
+
+            <!--first tow of buttons-->
+            <button class="calc-button"  value ="sin" onclick="sin()">sin</button>
+            <button class="calc-button"  value ="cos" onclick="cos()">cos</button>
+            <button class="calc-button"  value ="tan" onclick="tan()">tan</button>
+            <button class="calc-button"  value ="π" onclick="pie()">π</button>
+            <button class="calc-button" value ="-" onclick="insert('-')">&minus;</button>
+
+            <!--second tow of buttons-->
+            <button class="calc-button"  value ="√" onclick="radical()">&radic;</button>
+            <button class="calc-button" value ="%" onclick="percent('%')">&percnt;</button>
+            <button class="calc-button"  value ="𝑥^2" onclick="squared()">𝑥^2</button>
+            <button class="calc-button" value ="1" onclick="insert('1')">1</button>
+            <button class="calc-button"  value ="/" onclick="insert('/')">&divide;</button>
+
+            <!--third tow of buttons-->
+            <button class="calc-button" value ="2" onclick="insert('2')">2</button>
+            <button class="calc-button" value ="3" onclick="insert('3')">3</button>
+            <button class="calc-button" value ="4" onclick="insert('4')">4</button>
+            <button class="calc-button" value ="5" onclick="insert('5')">5</button>
+            <button class="calc-button" value ="*"  onclick="insert('*')">&times;</button>
+
+            <!--fourth tow of buttons-->
+            <button class="calc-button" value ="6" onclick="insert('6')">6</button>
+            <button class="calc-button"  value ="7" onclick="insert('7')">7</button>
+            <button class="calc-button"  value ="8" onclick="insert('8')">8</button>
+            <button class="calc-button"  value ="9" onclick="insert('9')">9</button>
+            <button class="calc-button" value ="+" onclick="insert('+')">&plus;</button>
+
+            <!--fifth tow of buttons-->
+            <button class="calc-button is-zero" value ="0" onclick="insert('0')">0</button>
+            <button class="calc-button" value ="." onclick="insert('.')">.</button>
+            <button class="calc-button is-equals" value = "=" onclick="equal('=')">&equals;</button>
+            <button class="calc-button is-clear" value="C" onclick = "form1.textview.value = ' '"> C </button>
+        
+        </div>
+    </div>
+</body>
+</html>

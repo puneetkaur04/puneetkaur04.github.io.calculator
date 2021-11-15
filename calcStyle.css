@@ -1,0 +1,84 @@
+
+@media screen and (max-width: 3000px) and ( min-width: 200px) 
+{
+    /* code that applies to the whole */
+    body
+    {
+        background-color: #236AB9;
+    }
+
+    .calculator-buttons 
+    {
+        background-color:#D4E4F7;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 30px;
+        border: 3px solid rgba(0, 0, 0, 0.8);
+        width: 50%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+    }
+
+    /* code applies to the buttons */
+    .calc-button
+    {
+        box-sizing: border-box;
+        background-color: #236AB9;
+        border: 3px solid rgba(0, 0, 0, 0.8);
+        padding: 30px;
+        font-size: 30px;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        color: white;
+    }
+
+    /* code for the text box */
+    .textview
+    {
+        position: relative;
+        text-align: end;
+        padding: 10px;
+        margin-left: 25%;
+        width: 48.25%;
+        height: 100px;
+        font-size: 25px;
+        border: 3px solid rgba(0, 0, 0, 0.8);
+    }	
+
+    .top
+    {
+        background-color:#D4E4F7;
+        border: 3px solid rgba(0, 0, 0, 0.8);
+        width: 50%;
+        margin:auto;
+        box-sizing: border-box;
+    }
+
+    /* code applies to the title, "Calculator" */
+    .top p
+    {
+        font-family: 'Anton', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        height: 70px;
+        color: black;
+    }
+
+    /* fixiates the size of the C button */
+    .is-clear   
+    {
+        grid-row: 5;
+        grid-column: 4/6;
+        width: 81%;
+    }
+
+    /* cursor and color changes when user hovers over the buttons */
+    .calc-button:hover{
+        cursor: pointer;
+        background-color: #4489d8;
+    }
+}
